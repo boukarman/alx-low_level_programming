@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ * Return: Always 1 (Success)
+ */
+for (a = 0; a < b; a++)
+    printf("%d\n", a);
