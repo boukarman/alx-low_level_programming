@@ -3,8 +3,8 @@
 
 /**
  * main - entry point
- * Description: prints the numbers 1 - 100 
- * Fizz for multiples of 3, Buzz for multiples of 5
+ * Description: prints the numbers 1 - 100 w/ 
+ * Fizz for multiples of 3, Buzz for multiples of 5,
  * and FizzBuzz for multiples of both
  * Return: always 0
  */
