@@ -3,8 +3,7 @@
  * _strcmp - compare 2 string
  * @s1:string
  * @s2:strmp
- * Return:int
- * 
+ * Return: int
  */
 int _strcmp(char *s1, char *s2)
 {
