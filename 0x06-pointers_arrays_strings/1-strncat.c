@@ -4,9 +4,7 @@
  * _strncat - concatenate two strings
  *
  * @src: The source of string
- *
- * @dest: The destination of the string
- * 
+ * @dest: The destination of the string 
  * @n: The length of int
  *
  * Return: pointer to the resulting string dest
