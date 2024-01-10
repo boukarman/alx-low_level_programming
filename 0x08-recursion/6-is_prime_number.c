@@ -1,7 +1,7 @@
-#inlude "main.h"
+#include "main.h"
 
 /**
- * check - checks to see if number is prime
+ * check - checks if number is prime or not
  * @a:int
  * @b:int
  * Return:int
@@ -17,7 +17,7 @@ int check(int a, int b)
 }
 
 /**
- * is_prime_number - states if number is prime
+ * is_prime_number - is the number prime
  * @n:int
  * Return:int
  */
