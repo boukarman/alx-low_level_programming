@@ -4,11 +4,11 @@
 
 /**
  *
- *	_putchar - writes the character c in the output
+ * _putchar - writes the character c in the output
  *
- * 	@c: The character to print
+ * @c: The character to print
  *
- *	Return: On success 1 and -1 if error
+ * Return: On success 1 and -1 if error
  */
 
 int _putchar(char c)
