@@ -1,15 +1,26 @@
-#include <unistd.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
- * _abs - printabs
- * @n:int
- * Return:int
+ * _abs - abs
+ *@n: number to check absolute value
+ *
+ * Return: absolute value of the variable
  */
-
 int _abs(int n)
-
 {
+	int result;
 
-	return 0;
-
+	if (n > 0)
+	{
+		result = n;
+	}
+	else if (n == 0)
+	{
+		result = 0;
+	}
+	else
+	{
+		result = -n;
+	}
+	return (result);
 }

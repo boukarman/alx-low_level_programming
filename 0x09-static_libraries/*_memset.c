@@ -1,17 +1,20 @@
-#include <unistd.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
- * *_memset - print
- * @s:char
- * @b:char
- * @n:int
- * Return:int
+ * _memset - fills memory with constant byte
+ * @s: string
+ * @b: constant byte
+ * @n: memory length
+ *
+ * Return: string filled with constant byte
  */
-
-char *_memset(char *s, char b, unsigned int n);
-
+char *_memset(char *s, char b, unsigned int n)
 {
+	unsigned int i;
+	char *clone;
 
-	return 0;
-
+	clone = s;
+	for (i = 0; i < n; i++)
+		*(clone + i) = b;
+	return (s);
 }

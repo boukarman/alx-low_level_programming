@@ -1,16 +1,17 @@
-#include <unistd.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
- * _strcmp - print
- * @s1:char
- * @s2:char
- * Return:int
+ * _puts - prints a string
+ * @str: a string
+ *
+ * Return: Nothing
  */
-
-int _strcmp(char *s1, char *s2);
-
+void _puts(char *str)
 {
-
-	return 0;
-
+	while (*str != '\0')
+	{
+		putchar(*str);
+		str++;
+	}
+	putchar('\n');
 }

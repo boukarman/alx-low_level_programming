@@ -1,15 +1,16 @@
-#include <unistd.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
- * _strlen - string length
- * @s:char
- * Return:int
+ * _strlen - return the length of a string
+ * @s: pointer to a string
+ *
+ * Return: length of the string
  */
-
 int _strlen(char *s)
-
 {
+	int len;
 
-	return 0;
-
+	for (len = 0; s[len] != '\0'; len++)
+	;
+	return (len);
 }

@@ -1,15 +1,17 @@
-#include <unistd.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
- * _puts - print
- * @s: char
- * Return: nothing
+ * _puts - prints a string
+ * @str: a string
+ *
+ * Return: Nothing
  */
-
-void _puts(char *s)
-
+void _puts(char *str)
 {
-
-	return 0;
-
+	while (*str != '\0')
+	{
+		putchar(*str);
+		str++;
+	}
+	putchar('\n');
 }

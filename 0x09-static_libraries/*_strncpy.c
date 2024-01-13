@@ -1,17 +1,19 @@
-#include <unistd.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
- * *_strncpy - print
- * @des:char
- * @src:char
- * @n:int
- * Return:char
+ * _strncpy - copies a string
+ * @dest: destination string
+ * @src: source string
+ * @n: the n character that we will copy
+ * Return: a copied string
  */
-
-char *_strncpy(char *dest, char *src, int n);
-
+char *_strncpy(char *dest, char *src, int n)
 {
+	int i;
 
-	return 0;
-
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	for (; i < n; i++)
+		dest[i] = '\0';
+	return (dest);
 }
