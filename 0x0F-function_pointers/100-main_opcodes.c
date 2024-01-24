@@ -10,16 +10,16 @@
  */
 void print_opcodes(void (*func)(), int n)
 {
-    int i;
-    unsigned char *opcodes = (unsigned char *)func;
+	int i;
+	unsigned char *opcodes = (unsigned char *)func;
 
-    for (i = 0; i < n; i++)
-    {
-        printf("%.2x", opcodes[i]);
-        if (i < n - 1)
-            printf(" ");
-    }
-    printf("\n");
+	for (i = 0; i < n; i++)
+	{
+		printf("%.2x", opcodes[i]);
+		if (i < n - 1)
+		printf(" ");
+	}
+	printf("\n");
 }
 
 /**
@@ -27,27 +27,27 @@ void print_opcodes(void (*func)(), int n)
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: 0 on success, 1 for incorrect arguments, 2 for negative bytes
+ * Return: 0 on success, 1 for incorrect arguments, 
+ * 2 for negative bytes
  */
 int main(int argc, char *argv[])
 {
-    int n;
+	int n;
 
-    if (argc != 2)
-    {
-        printf("Error\n");
-        return 1;
-    }
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return 1;
+	}
 
-    n = atoi(argv[1]);
+	n = atoi(argv[1]);
 
-    if (n < 0)
-    {
-        printf("Error\n");
-        return 2;
-    }
+	if (n < 0)
+	{
+		printf("Error\n");
+		return 2;
+	}
+	print_opcodes((void *)&main, n);
 
-    print_opcodes((void *)&main, n);
-
-    return 0;
+	return 0;
 }
