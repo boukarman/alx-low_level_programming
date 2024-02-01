@@ -27,8 +27,7 @@ void print_opcodes(void (*func)(), int n)
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: 0 on success, 1 for incorrect arguments, 
- * 2 for negative bytes
+ * Return: 0 on success 1 for error 2 for negative
  */
 int main(int argc, char *argv[])
 {
