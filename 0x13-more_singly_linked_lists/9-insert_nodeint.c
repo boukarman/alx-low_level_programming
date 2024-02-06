@@ -1,14 +1,12 @@
 #include "lists.h"
-
 /**
  * insert_nodeint_at_index - insert new node at given position
  * @head: list head
  * @idx: new node index
  * @n: data
  *
- * Return: new node address / NULL if it failed
+ * Return: new node address / NULL if failed
  */
-
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *curr = NULL, *node = NULL;
@@ -18,7 +16,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 	if (idx != 0)
 	{
-		current = *head;
+		curr = *head;
 		for (i = 0; i < idx - 1 && curr != NULL; i++)
 		{
 			curr = curr->next;
