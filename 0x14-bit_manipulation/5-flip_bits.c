@@ -5,6 +5,7 @@
  * to another
  * @n: first number
  * @m: second number
+ *
  * Return: number of bits to flip
  */
 
