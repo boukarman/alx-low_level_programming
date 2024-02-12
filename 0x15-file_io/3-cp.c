@@ -20,8 +20,8 @@ void check_97(int argc)
  * check_98 - check that file descirptor was closed
  * @check: check if true or not
  * @file: file
- * @f_from: file descriptor from
- * @f_to: file desciroptor to
+ * @fd_from: file descriptor from
+ * @fd_to: file desciroptor to
  *
  * Return: nothing
  */
@@ -42,8 +42,8 @@ void check_98(ssize_t check, char *file, int fd_from, int fd_to)
  * check_99 - check that file descirptors was closed
  * @check: check if true or not
  * @file: file
- * @f_from: file descriptor from
- * @f_to: file descirptor to
+ * @fd_from: file descriptor from
+ * @fd_to: file descirptor to
  *
  * Return: nothing
  */
@@ -95,9 +95,9 @@ int main(int argc, char **argv)
 	len_r = BUFFER_SIZE;
 	while (len_r == BUFFER_SIZE)
 	{
-		len_r = read(f_from, buffer, BUFFER_SIZE);
+		len_r = read(fd_from, buffer, BUFFER_SIZE);
 		check_98(len_r, argv[1], fd_from, fd_to);
-		lenw = write(f_to, buffer, lenr);
+		lenw = write(fd_to, buffer, lenr);
 		if (len_w != len_r)
 			len_w = -1;
 		check_99(len_w, argv[2], fd_from, fd_to);
