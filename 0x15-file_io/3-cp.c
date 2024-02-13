@@ -95,9 +95,9 @@ int main(int argc, char **argv)
 	len_r = BUFFER_SIZE;
 	while (len_r == BUFFER_SIZE)
 	{
-		len_r = read(fd_from, buffer, BUFFER_SIZE);
+		len_r = read(fdes_from, buffer, BUFFER_SIZE);
 		check_98(len_r, argv[1], fdes_from, fdes_to);
-		lenw = write(fd_to, buffer, lenr);
+		len_w = write(fdes_to, buffer, len_r);
 		if (len_w != len_r)
 			len_w = -1;
 		check_99(len_w, argv[2], fdes_from, fdes_to);
