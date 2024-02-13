@@ -75,7 +75,7 @@ void check_100(int check, int f_des)
 	}
 }
 /**
- * main - main function
+ * main - entry function
  * @argc: argument count
  * @argv: argument values
  *
