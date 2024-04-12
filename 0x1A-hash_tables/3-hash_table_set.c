@@ -31,7 +31,6 @@ hash_node_t *create_node(const char *key, const char *value)
 	hn->next = NULL;
 	return (hn);
 }
-
 /**
  * hash_table_set - add element to the hash table
  *
@@ -41,7 +40,6 @@ hash_node_t *create_node(const char *key, const char *value)
  *
  * Return: 1 in success or 0 if not 
  */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *hn = NULL, *tmp = NULL;
